@@ -1,1 +1,28 @@
+-- to push commited changes to cloud repository
+git push -u origin master
+
+
 http://kafka.apache.org/quickstart
+
+sudo sh kafka-server-start.sh /usr/local/kafka/config/server.properties
+
+
+
+// To produce messages to kafka broker
+sudo sh kafka-console-producer.sh --broker-list localhost:9092 --topic test
+
+// To consume messages from kafka broker
+sudo sh kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+
+
+// To get broker id from zookeeper metadata.
+
+1. Go to zookeeper installation folder
+cd /usr/local/zookeeper/bin/
+
+2. sudo sh zkCli.sh -server localhost:2181
+
+3. ls /brokers/ids
+
+
+
