@@ -31,9 +31,9 @@ public class SerializeMessageAvro {
         DataFileReader<User> dataFileReader = new DataFileReader<User>(file, userDatumReader);
         User user = null;
         while (dataFileReader.hasNext()) {
-// Reuse user object by passing it to next(). This saves us from
-// allocating and garbage collecting many objects for files with
-// many items.
+        // Reuse user object by passing it to next(). This saves us from
+        // allocating and garbage collecting many objects for files with
+        // many items.
             user = dataFileReader.next(user);
             System.out.println(user);
         }

@@ -1,8 +1,7 @@
-git commit --author="Name <sumitagrawal.03071989@gmail.com>" -m "Avro other changes"
+-- commit all changed files, ( files which are not added to index are excluded here )
+git commit -a --author="Name <sumitagrawal.03071989@gmail.com>" -m "Avro POC"
 
 -- to push commited changes to cloud repository
-git push -u origin master
-
 git push -u origin master
 
 
