@@ -1,4 +1,4 @@
-package com.kafka.poc.producers;
+package com.avro.poc;
 
 import org.apache.avro.Schema;
 import org.apache.avro.file.DataFileReader;

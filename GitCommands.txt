@@ -1,4 +1,7 @@
-Initial Commit
+git commit --author="Name <sumitagrawal.03071989@gmail.com>" -m "Avro other changes"
+
+-- to push commited changes to cloud repository
+git push -u origin master
 
 git push -u origin master
 

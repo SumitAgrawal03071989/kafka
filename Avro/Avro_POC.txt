@@ -26,6 +26,6 @@ Define Avro Schema in local file in JSON fomat, example [1], save this to user.a
 
 Compiling user.avsc would produce example.avro.User java class in specifed destimation directory.
 
-java -jar avro-tools-1.9.2.jar compile schema /Users/sumitagrawal/PSpace/Projects/kafka/IJLabs/Kafka.poc/src/main/avro/user.avsc /Users/sumitagrawal/PSpace/Projects/kafka/IJLabs/Kafka.poc/src/main/java/
+java -jar avro-tools-1.9.2.jar compile schema /Users/sumitagrawal/PSpace/Projects/kafka/IJLabs/Kafka.poc/src/main/avro/user.avsc /Users/sumitagrawal/PSpace/Projects/kafka/IJLabs/avro.poc/src/main/java/
 
 
