@@ -1,0 +1,12 @@
+// Download confluent platform from online 
+
+// Unzip and move this to /usr/local/confluent/ directory
+
+// start vanila zookeeper and kafka before firing this command.
+
+sudo sh /usr/local/confluent/bin/schema-registry-start /usr/local/confluent/etc/schema-registry/schema-registry.properties
+
+
+curl -X POST -i -H "Content-Type: application/vnd.schemaregistry.v1+json" \
+    --data '{"schema": "{\"type\": \"string\"}"}' \
+    http://localhost:8081/subjects/Kafka-key/versions
