@@ -1,5 +1,10 @@
 http://kafka.apache.org/quickstart
 
+// Start Zookeeper 
+sudo sh zookeeper-server-start.sh /usr/local/kafka/config/zookeeper.properties
+
+
+// Start Kafka Server
 sudo sh kafka-server-start.sh /usr/local/kafka/config/server.properties
 
 
